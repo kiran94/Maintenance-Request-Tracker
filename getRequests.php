@@ -15,7 +15,7 @@
 	$result = $execute->query($con, $query); 
 
 	//Set cols to get. 
-	$cols = ["reqlabel", "building_id", "room_id"]; 
+	$cols = ["reqlabel", "reqtimestamp" ,"building_id", "room_id"]; 
 
 	//Print results in JSON format. 
 	$execute->printJSON($result, $cols); 
