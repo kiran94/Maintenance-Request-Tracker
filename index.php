@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html>
+<html lang="en">
 <head>
 	<title>Maintenance Request Tracker</title>
 	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
@@ -9,15 +9,30 @@
 
 	<!-- CONTAINER -->
 	<div class="container">
-		<h1 id='title'>Maintenance Requester</h1>
-
-
-		<!-- CONTENT -->
-		<div class='body-content'>
-			dfodfg;dfg
-
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id='title'>Maintenance Requester</h1>
+			</div>
 		</div>
-		<!-- END CONTENT -->
+
+
+		<?php
+			require_once "Connect.php"; 
+
+			$connect = new Connect(); 
+			$connect->getConnection(); 
+			
+		?>
+
+
+
+
+
+
+
+
+
 
 
 		<!-- FOOTER -->
@@ -25,17 +40,11 @@
 			Developed By Kiran Patel<br/>
 			View the <a href='https://github.com/kiran94/Maintenance-Request-Tracker'>project!</a>  
 		</div>
-
 		<!-- END FOOTER -->
-
-
-
-
 
 
 	<!-- END CONTAINER -->
 	</div>
-
 
 
 	<!-- Need jquery -->
