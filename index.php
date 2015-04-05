@@ -16,13 +16,37 @@
 			</div>
 		</div>
 
+		<div class="row">
+			<div class="col-xs-12">
+
+				<ul id="request">
+					<li>Test</li>
+				</ul>
+
+			</div>
+		</div>
+
+
 
 		<?php
 			require_once "error.php"; 
 			require_once "Connect.php"; 
 
 			$connect = new Connect(); 
-			$connect->getConnection(); 
+			$con = $connect->getConnection(); 
+
+
+			$query = "SELECT * from request"; 
+
+			$result = mysqli_query($con, $query); 
+
+			while($row = mysqli_fetch_array($result))
+			{
+				echo $row["reqlabel"]; 
+			}
+
+			
+
 			
 		?>
 
@@ -48,7 +72,7 @@
 	</div>
 
 
-	<!-- Need jquery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="script/bootstrap.min.js"></script>
 </body>
 </html>
