@@ -28,24 +28,6 @@
 
 
 
-		<?php
-			
-
-			
-
-			
-		?>
-
-
-
-
-
-
-
-
-
-
-
 		<!-- FOOTER -->
 		<div id='body-footer'>
 			Developed By Kiran Patel<br/>

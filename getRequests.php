@@ -19,6 +19,4 @@
 
 	//Print results in JSON format. 
 	$execute->printJSON($result, $cols); 
-
-	
 ?>

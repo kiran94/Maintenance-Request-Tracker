@@ -38,9 +38,6 @@ class Connect
 	{
 		return $this->con; 
 	}
-
-
 }
-
 
 ?>
