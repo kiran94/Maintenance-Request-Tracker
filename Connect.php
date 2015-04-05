@@ -2,7 +2,7 @@
 
 class Connect 
 {
-	private $con; 
+	public $con = ""; 
 
 	private $host = "localhost"; 
 	private $username = "root"; 
@@ -10,25 +10,29 @@ class Connect
 	private $db = "maintenence"; 
 
 
-	public getConnection()
+	function getConnection()
 	{
 
-		$con = mysql_connect($host, $username, $password, $db); 
+		$con = mysqli_connect($host, $username, $password); 
+		mysqli_select_db($con, $db); 
+
 		$this->setCon($con); 
 
 		echo "Connection Established"; 
 	}
 
 
-	private setCon($newCon)
+	function setCon($newCon)
 	{
-		$this->$con = $newCon; 
+		$this->con = $newCon; 
 	}
 
-	public getCon()
+	function getCon()
 	{
-		return $this->$con; 
+		return $this->con; 
 	}
+
+
 }
 
 

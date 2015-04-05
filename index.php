@@ -18,6 +18,7 @@
 
 
 		<?php
+			require_once "error.php"; 
 			require_once "Connect.php"; 
 
 			$connect = new Connect(); 
