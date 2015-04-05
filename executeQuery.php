@@ -36,7 +36,7 @@
 		function printJSON($result, $cols)
 		{
 			//Start printing json. 
-			echo "{  \" result  \" : ["; 
+			echo "{\"result\":["; 
 
 			//Variable used to determine if comma should be printed between arrays. 
 			$counter = 0; 
