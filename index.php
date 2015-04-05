@@ -39,19 +39,71 @@
 		</div>
 		<!-- end icons -->
 
-		<!-- requests table -->
-		<div class="row">
-			<div class="col-xs-12">
-				<table id="requests" class="table table-condensed">
-					<th>Date</th>
-					<th>Label</th>
-					<th>Room</th>
-					<th>Building</th>
-				</table>
+		<!-- Requests Panel -->
+		<div class="panel panel-success">
+
+			<div class="panel-heading">
+			 	Jobs
+		  	</div>
+
+			<div class="panel-body">
+				<!-- requests table -->
+				<div class="row">
+					<div class="col-xs-12">
+						<table id="requests" class="table table-condensed">
+							<th>Date</th>
+							<th>Label</th>
+							<th>Room</th>
+							<th>Building</th>
+						</table>
+					</div>
+				</div>
+				<!-- end table -->
+			</div>
+
+		</div>
+		<!-- End Request Panel -->
+
+
+		<div class="panel panel-success">
+
+			<div class="panel-heading">
+			 	Add Job
+		  	</div>
+
+			<div class="panel-body">
+
+				<form>
+					<div class="form-group">
+
+						<!-- REQUEST LINE -->
+					    <label for="reqlabel" class="col-sm-2 control-label">Request Description</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="reqlabel" placeholder="Description">
+					    </div>
+					    <!-- END REQUEST LINE -->
+					 </div>
+
+					 <br/>
+					 <br/>
+
+					 <!-- BUILDING FORM -->
+					 <div class="col-xs-2">
+					 	<label>Building</label>
+					 </div>
+
+					 <div class="col-xs-10">
+					 	<select class="form-control" id="buildings"></select>
+					 </div>
+					 <!-- BUILDING FORM -->
+
+				</form>
+
 			</div>
 		</div>
-		<!-- end table -->
 
+
+	
 		<!-- FOOTER -->
 		<div id='body-footer'>
 			Developed By Kiran Patel<br/>
@@ -67,6 +119,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="script/bootstrap.min.js"></script>
 	<script type="text/javascript" src="script/loadRequests.js"></script>
+	<script type="text/javascript" src="script/loadBuildings.js"></script>
 	<!-- end scripts -->
 
 </body>

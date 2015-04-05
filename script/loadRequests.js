@@ -36,6 +36,7 @@ $(document).ready(function()
 				
 			}
 
+			//Append the text to the element. 
 			$("#requests").append(allText); 
 		},
 		error: function()

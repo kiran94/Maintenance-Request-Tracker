@@ -8,7 +8,7 @@ body
 	text-align: center; 
 	padding: 1em;
 	color: white;
-	background-color: #000080; 
+	background-color: #DEF0D8; 
 }
 
 .body-content
@@ -18,18 +18,16 @@ body
 	padding-bottom: 1em; 
 }
 
+.title_text
+{
+	color: white;
+}
+
 #requests
 {
 	font-size: 1em; 
 	width: 100%; 
 }
-
-/*
-table,tr,th,td 
-{
-	border : 1px solid black;
-	text-align: center; 
-}*/
 
 .close
 {
