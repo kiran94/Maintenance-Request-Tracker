@@ -29,21 +29,7 @@
 
 
 		<?php
-			require_once "error.php"; 
-			require_once "Connect.php"; 
-
-			$connect = new Connect(); 
-			$con = $connect->getConnection(); 
-
-
-			$query = "SELECT * from request"; 
-
-			$result = mysqli_query($con, $query); 
-
-			while($row = mysqli_fetch_array($result))
-			{
-				echo $row["reqlabel"]; 
-			}
+			
 
 			
 
